@@ -1,10 +1,12 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-window.ApiUtil = require('./util/apiUtil');
-window.BenchStore = require('./stores/bench');
-window.ApiActions = require('./actions/apiActions');
+var ApiUtil = require('./util/apiUtil');
+var BenchStore = require('./stores/bench');
+var Index = require('./components/index');
+var Search = require('./components/search');
+var Map = require('./components/map');
 
 document.addEventListener("DOMContentLoaded", function () {
-  ReactDOM.render(<div />, document.getElementById('content'));
+  ReactDOM.render(<Search />, document.getElementById('content'));
 });
